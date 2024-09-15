@@ -1,0 +1,9 @@
+{
+  "dh": "dh_configs/lab_uri_industrial_16505_dh.json",
+  "path": "paths/inputs/industrial_16505/euler_16505_inflated_path.csv",
+  "urdf_path": "models/urdf/ur5_industrial_16505/ur5_industrial_16505.urdf",
+  "dynamic_sub_assembly_relative_rotation": [90, 0, 90],
+  "ref_point_offset": [0, 0, 0],
+  "theta_offsets": [0, 0, 0, 0, 0, 180],
+  "position_factor": 0.09
+}

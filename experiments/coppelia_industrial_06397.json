@@ -1,0 +1,9 @@
+{
+  "dh": "dh_configs/coppelia_ur5_industrial_06397_dh.json",
+  "path": "paths/inputs/industrial_06397/euler_06397_inflated_path.csv",
+  "urdf_path": "models/urdf/industrial_06397/industrial_06397.urdf",
+  "dynamic_sub_assembly_relative_rotation": [0, 90, 0],
+  "ref_point_offset": [0, 0, 0],
+  "theta_offsets": [-90, 90, 0, 90, 0, -90],
+  "position_factor": 0.25
+}

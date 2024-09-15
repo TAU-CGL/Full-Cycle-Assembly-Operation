@@ -1,0 +1,786 @@
+<?xml version="1.0"?>
+<robot name="robot_base_respondable">
+    <link name="robot_base">
+        <collision name="robot_base_respondable">
+            <origin xyz="0.000000 0.000000 0.008500" rpy="3.141592 3.141593 -2.552481" />
+            <geometry>
+                <cylinder length="0.012300089001656" radius="0.056886240839958" />
+            </geometry>
+        </collision>
+        <collision name="robot_base_respondable">
+            <origin xyz="0.000000 0.000000 -0.006150" rpy="-3.141592 3.141593 1.747927" />
+            <geometry>
+                <cylinder length="0.017000352963805" radius="0.072642646729946" />
+            </geometry>
+        </collision>
+        <visual name="robot_base_visual">
+            <origin xyz="0.000000 0.000000 -0.000000" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_robot_base_visual_vis_1.dae" />
+            </geometry>
+            <material name="robot_base_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="robot_base" />
+        <child link="link_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="-0.000000 0.000000 0.008500" rpy="3.141592 3.141593 3.141592" />
+    </joint>
+    <link name="link_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="3.141592 3.141593 3.141592" xyz="-0.012312 0.000048 0.066405" />
+            <inertia izz="0.09818059467752" iyy="0.10672965841326" ixz="0.0024490834762624" ixy="8.9516803607533e-05" ixx="0.095492165355254" iyz="-7.9251186174956e-05" />
+            <mass value="2.5" />
+        </inertial>
+        <collision name="link_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007178 0.000095 0.070381" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_respondable_coll_1.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007178 0.000095 0.070381" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_respondable_coll_2.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007178 0.000095 0.070381" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_respondable_coll_3.dae" />
+            </geometry>
+        </collision>
+        <visual name="link_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007150 0.000000 0.070335" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+        <visual name="link_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007150 0.000000 0.070335" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="link_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007150 0.000000 0.070335" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_respondable_respondable_respondable_respondable_respondable_visual_vis_3.dae" />
+            </geometry>
+            <material name="link_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_2">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="link_2_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="-0.070300 0.000000 0.066050" rpy="0.000001 -1.570796 0.000000" />
+    </joint>
+    <link name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="-0.000000 1.570796 0.000000" xyz="0.215595 -0.000035 0.063573" />
+            <inertia izz="0.067345368316432" iyy="0.63325135224174" ixz="-0.0052638063542259" ixy="9.2431180680848e-06" ixx="0.62573305153059" iyz="-0.00017721757850982" />
+            <mass value="5.6999998092651" />
+        </inertial>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_1.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_2.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_3.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_4.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_5.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_6.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_2_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.212550 -0.000115 0.064235" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_respondable_coll_7.dae" />
+            </geometry>
+        </collision>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.870588 0.870588 0.870588 1.0" />
+            </material>
+        </visual>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_3.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_4.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_5.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_2_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.212550 0.000000 0.064217" rpy="-0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_2_respondable_respondable_respondable_respondable_respondable_visual_vis_6.dae" />
+            </geometry>
+            <material name="link_2_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_3">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_2_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="link_3_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.425100 -0.000000 0.000000" rpy="3.141593 3.141592 3.141592" />
+    </joint>
+    <link name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="0.000000 1.570796 0.000000" xyz="0.192773 0.000015 -0.050153" />
+            <inertia izz="0.035597955537677" iyy="0.46060709235019" ixz="-0.027670910392482" ixy="2.2187787147887e-06" ixx="0.4592564485459" iyz="-2.1029099787318e-05" />
+            <mass value="3.9000000953674" />
+        </inertial>
+        <collision name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.186773 0.000016 -0.057847" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_respondable_coll_1.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.186773 0.000016 -0.057847" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_respondable_coll_2.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.186773 0.000016 -0.057847" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_respondable_coll_3.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.186773 0.000016 -0.057847" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_respondable_coll_4.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_3_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.186773 0.000016 -0.057847" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_respondable_coll_5.dae" />
+            </geometry>
+        </collision>
+        <visual name="link_3_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.186650 -0.000000 -0.057850" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_3_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.870588 0.870588 0.870588 1.0" />
+            </material>
+        </visual>
+        <visual name="link_3_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.186650 -0.000000 -0.057850" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="link_3_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_3_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.186650 -0.000000 -0.057850" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_visual_vis_3.dae" />
+            </geometry>
+            <material name="link_3_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+        <visual name="link_3_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.186650 -0.000000 -0.057850" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_visual_vis_4.dae" />
+            </geometry>
+            <material name="link_3_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+        <visual name="link_3_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.186650 -0.000000 -0.057850" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_3_respondable_respondable_respondable_respondable_respondable_visual_vis_5.dae" />
+            </geometry>
+            <material name="link_3_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_4">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_3_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="link_4_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.392150 -0.000000 0.000000" rpy="3.141593 3.141592 3.141592" />
+    </joint>
+    <link name="link_4_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="0.000000 1.570796 0.000000" xyz="-0.005517 -0.000003 0.030943" />
+            <inertia izz="0.087106483494915" iyy="0.11466452218562" ixz="-0.0020900872562349" ixy="3.1976010243315e-06" ixx="0.10017005794782" iyz="-1.791527123899e-05" />
+            <mass value="2.5" />
+        </inertial>
+        <collision name="link_4_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007501 -0.000045 0.032830" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_respondable_coll_1.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_4_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007501 -0.000045 0.032830" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_respondable_coll_2.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_4_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="-0.007501 -0.000045 0.032830" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_respondable_coll_3.dae" />
+            </geometry>
+        </collision>
+        <visual name="link_4_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007500 0.000000 0.032800" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_4_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+        <visual name="link_4_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007500 0.000000 0.032800" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="link_4_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_4_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="-0.007500 0.000000 0.032800" rpy="0.000000 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_4_respondable_respondable_respondable_respondable_respondable_visual_vis_3.dae" />
+            </geometry>
+            <material name="link_4_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_5">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_4_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="link_5_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.045575 -0.000000 0.039700" rpy="2.596272 1.570799 2.596272" />
+    </joint>
+    <link name="link_5_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="3.141592 3.141593 3.141592" xyz="0.002100 0.000002 0.040669" />
+            <inertia izz="0.1041509279002" iyy="0.11739579576874" ixz="-0.00073245390311674" ixy="-1.5531769026879e-05" ixx="0.08179215416809" iyz="3.8714712477568e-06" />
+            <mass value="2.5" />
+        </inertial>
+        <collision name="link_5_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.003601 0.000045 0.042305" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_respondable_coll_1.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_5_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.003601 0.000045 0.042305" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_respondable_coll_2.dae" />
+            </geometry>
+        </collision>
+        <collision name="link_5_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.003601 0.000045 0.042305" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_respondable_coll_3.dae" />
+            </geometry>
+        </collision>
+        <visual name="link_5_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.003600 -0.000000 0.042275" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_5_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.535294 0.535294 0.535294 1.0" />
+            </material>
+        </visual>
+        <visual name="link_5_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.003600 -0.000000 0.042275" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="link_5_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.508235 0.761224 0.903529 1.0" />
+            </material>
+        </visual>
+        <visual name="link_5_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.003600 -0.000000 0.042275" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_visual_vis_3.dae" />
+            </geometry>
+            <material name="link_5_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+        <visual name="link_5_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.003600 -0.000000 0.042275" rpy="3.141592 3.141593 3.141592" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_5_respondable_respondable_respondable_respondable_respondable_visual_vis_4.dae" />
+            </geometry>
+            <material name="link_5_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282353 0.282353 0.282353 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_6">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_5_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="link_6_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.014425 -0.000000 0.049175" rpy="-3.141592 4.712385 -3.141592" />
+    </joint>
+    <link name="link_6_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="-3.141593 3.141593 3.141592" xyz="0.000000 -0.000000 0.076675" />
+            <inertia izz="0.010054638677955" iyy="0.0058406852103875" ixz="-2.0432933882088e-25" ixy="-5.1232196104835e-48" ixx="0.0058406852103875" iyz="2.0432933875776e-25" />
+            <mass value="0.69999998807907" />
+        </inertial>
+        <collision name="link_6_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.000000 -0.000000 0.076675" rpy="-3.141593 3.141593 3.141592" />
+            <geometry>
+                <cylinder length="0.025500684976578" radius="0.036602452397346" />
+            </geometry>
+        </collision>
+        <visual name="link_6_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.003860 -0.000000 0.080425" rpy="0.000001 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_link_6_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="link_6_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.870588 0.870588 0.870588 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_6_2">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="link_6_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.014425 0.000000 0.049175" rpy="1.569831 4.712382 -1.569831" />
+    </joint>
+    <link name="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="1.570796 3.141592 -3.141591" xyz="0.043899 0.008350 0.012000" />
+            <inertia izz="0.00072521695233332" iyy="0.00024588701243668" ixz="3.003181387601e-05" ixy="-3.0779821975945e-10" ixx="0.00070222511049253" iyz="-2.9619775595086e-11" />
+            <mass value="0.5" />
+        </inertial>
+        <collision name="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.030000 0.010000 0.012000" rpy="1.570796 3.141592 -3.141591" />
+            <geometry>
+                <box size="0.017463 0.050800 0.057938" />
+            </geometry>
+        </collision>
+        <collision name="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.083032 -0.004681 0.012000" rpy="3.141592 3.141592 -3.141591" />
+            <geometry>
+                <box size="0.040000 0.020600 0.040000" />
+            </geometry>
+        </collision>
+        <collision name="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.041272 0.009924 0.012000" rpy="-0.000001 3.141592 -3.141591" />
+            <geometry>
+                <box size="0.030480 0.051435 0.139700" />
+            </geometry>
+        </collision>
+        <visual name="robotiq_base_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.062151 0.010000 0.012000" rpy="-0.000010 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_robotiq_base_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="robotiq_base_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="robotiq_base_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.062151 0.010000 0.012000" rpy="-0.000010 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_robotiq_base_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="robotiq_base_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="1.000000 1.000000 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="joint_6_3">
+        <axis xyz="0 0 1" />
+        <limit lower="-6.2831854820251" upper="6.2831854820251" effort="200.0" velocity="1.5707963705063" />
+        <parent link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="dynamic" />
+        <origin xyz="0.030000 0.010000 0.012000" rpy="1.570754 3.141589 -1.570804" />
+    </joint>
+    <link name="dynamic">
+        <visual name="dynamic">
+            <origin xyz="-0.014500 0.000000 -0.144000" rpy="1.570796 1.570796 0.000000" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_dynamic_vis_1.dae" />
+            </geometry>
+            <material name="dynamic_material">
+                <color rgba="0.600000 0.600000 0.600000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="Rjoint1">
+        <axis xyz="0 0 1" />
+        <limit lower="0.0" upper="0.78539818525314" effort="1.0" velocity="0.69813168048859" />
+        <parent link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="Rfinger_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.074600 -0.004681 -0.000738" rpy="-1.365597 1.570798 -2.936391" />
+    </joint>
+    <link name="Rfinger_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="1.570973 3.138398 -0.197315" xyz="0.005488 0.027095 -0.000010" />
+            <inertia izz="7.6569405819033e-06" iyy="2.9984947551464e-05" ixz="2.1062598132683e-20" ixy="2.8300690834922e-21" ixx="3.4844272621657e-05" iyz="2.6073848673186e-20" />
+            <mass value="0.10000000149012" />
+        </inertial>
+        <collision name="Rfinger_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.005488 0.027095 -0.000010" rpy="1.570973 3.138398 -0.197315" />
+            <geometry>
+                <box size="0.015803 0.033427 0.071444" />
+            </geometry>
+        </collision>
+        <visual name="Rfinger_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.005488 0.027095 -0.000010" rpy="1.570973 3.138398 -0.197315" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_Rfinger_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="Rfinger_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="Rfinger_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.005488 0.027095 -0.000010" rpy="1.570973 3.138398 -0.197315" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_Rfinger_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="Rfinger_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="Rjoint2">
+        <axis xyz="0 0 1" />
+        <parent link="Rfinger_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="RfingerTip_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.011178 0.055908 -0.000005" rpy="3.141588 3.141599 -2.617992" />
+    </joint>
+    <link name="RfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="1.570807 3.141584 2.617863" xyz="0.011427 0.016336 0.000003" />
+            <inertia izz="1.0653877098426e-05" iyy="3.3094096464058e-05" ixz="9.351945982435e-06" ixy="-1.5997928581758e-09" ixx="3.0898972527854e-05" iyz="3.040203109114e-09" />
+            <mass value="0.10000000149012" />
+        </inertial>
+        <collision name="RfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.011082 0.025433 0.000005" rpy="1.570807 3.141584 2.617863" />
+            <geometry>
+                <box size="0.009509 0.025404 0.036832" />
+            </geometry>
+        </collision>
+        <collision name="RfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.014106 0.016939 0.000003" rpy="-1.570950 3.141603 -0.523730" />
+            <geometry>
+                <box size="0.008509 0.014223 0.025144" />
+            </geometry>
+        </collision>
+        <collision name="RfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.009791 -0.010308 -0.000000" rpy="2.669909 1.571059 -1.519009" />
+            <geometry>
+                <box size="0.011078 0.012672 0.022135" />
+            </geometry>
+        </collision>
+        <visual name="RfingerTip_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.015278 0.010303 0.000004" rpy="1.570938 3.141584 2.617889" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RfingerTip_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="RfingerTip_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="RfingerTip_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.015278 0.010303 0.000004" rpy="1.570938 3.141584 2.617889" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RfingerTip_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="RfingerTip_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.305882 0.305882 0.305882 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="RactiveJoint">
+        <axis xyz="0 0 1" />
+        <parent link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="RauxLink1Visible_visual_visual_visual_visual_visual_visual" />
+        <origin xyz="0.067942 -0.004681 -0.018601" rpy="-1.365597 1.570798 -2.936391" />
+    </joint>
+    <link name="RauxLink1Visible_visual_visual_visual_visual_visual_visual">
+        <visual name="RauxLink1Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.014963 -0.001623 0.000001" rpy="-1.570931 3.141677 -1.674482" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RauxLink1Visible_visual_visual_visual_visual_visual_visual_vis_1.dae" />
+            </geometry>
+            <material name="RauxLink1Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="RauxLink1Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.014963 -0.001623 0.000001" rpy="-1.570931 3.141677 -1.674482" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RauxLink1Visible_visual_visual_visual_visual_visual_visual_vis_2.dae" />
+            </geometry>
+            <material name="RauxLink1Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="RauxJoint2">
+        <axis xyz="0 0 1" />
+        <parent link="RauxLink1Visible_visual_visual_visual_visual_visual_visual" />
+        <child link="RauxLink2Visible_visual_visual_visual_visual_visual_visual" />
+        <origin xyz="0.031465 -0.004244 0.000000" rpy="-3.141592 3.141593 -3.141592" />
+    </joint>
+    <link name="RauxLink2Visible_visual_visual_visual_visual_visual_visual">
+        <visual name="RauxLink2Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.003104 0.023609 0.000000" rpy="-1.570795 3.141585 -0.130688" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RauxLink2Visible_visual_visual_visual_visual_visual_visual_vis_1.dae" />
+            </geometry>
+            <material name="RauxLink2Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="RauxLink2Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.003104 0.023609 0.000000" rpy="-1.570795 3.141585 -0.130688" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_RauxLink2Visible_visual_visual_visual_visual_visual_visual_vis_2.dae" />
+            </geometry>
+            <material name="RauxLink2Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="revolute" name="Ljoint1">
+        <axis xyz="0 0 1" />
+        <limit lower="0.0" upper="0.78539818525314" effort="1.0" velocity="0.69813168048859" />
+        <parent link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="Lfinger_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.074600 -0.004681 0.024736" rpy="-1.570793 -1.570796 0.000000" />
+    </joint>
+    <link name="Lfinger_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="1.570973 3.138400 -0.197320" xyz="0.005488 0.027096 0.000000" />
+            <inertia izz="7.6569405819033e-06" iyy="2.9984947551464e-05" ixz="1.4177316404393e-20" ixy="5.9165832030089e-21" ixx="3.4844272621657e-05" iyz="3.1849061849001e-20" />
+            <mass value="0.10000000149012" />
+        </inertial>
+        <collision name="Lfinger_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.005488 0.027096 0.000000" rpy="1.570973 3.138400 -0.197320" />
+            <geometry>
+                <box size="0.015803 0.033427 0.071444" />
+            </geometry>
+        </collision>
+        <visual name="Lfinger_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.005488 0.027096 0.000000" rpy="1.570973 3.138400 -0.197320" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_Lfinger_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="Lfinger_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="Lfinger_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.005488 0.027096 0.000000" rpy="1.570973 3.138400 -0.197320" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_Lfinger_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="Lfinger_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="Ljoint2">
+        <axis xyz="0 0 1" />
+        <parent link="Lfinger_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="LfingerTip_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <origin xyz="0.011178 0.055909 0.000005" rpy="3.141589 3.141598 -2.617995" />
+    </joint>
+    <link name="LfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+        <inertial>
+            <origin rpy="1.570786 3.141585 2.618120" xyz="0.011428 0.016336 -0.000007" />
+            <inertia izz="1.0653864139997e-05" iyy="3.3094096464058e-05" ixz="9.3519319562104e-06" ixy="-1.599790949334e-09" ixx="3.0898985486283e-05" iyz="3.0402050629753e-09" />
+            <mass value="0.10000000149012" />
+        </inertial>
+        <collision name="LfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.011081 0.025434 -0.000005" rpy="1.570786 3.141585 2.618120" />
+            <geometry>
+                <box size="0.009509 0.025404 0.036832" />
+            </geometry>
+        </collision>
+        <collision name="LfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.014107 0.016941 -0.000006" rpy="-1.570929 3.141602 -0.523473" />
+            <geometry>
+                <box size="0.008509 0.014223 0.025144" />
+            </geometry>
+        </collision>
+        <collision name="LfingerTip_respondable_respondable_respondable_respondable_respondable_respondable">
+            <origin xyz="0.009799 -0.010306 -0.000009" rpy="2.711576 1.571041 -1.477086" />
+            <geometry>
+                <box size="0.011078 0.012672 0.022135" />
+            </geometry>
+        </collision>
+        <visual name="LfingerTip_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.015281 0.010303 -0.000006" rpy="1.570917 3.141585 2.618145" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LfingerTip_respondable_respondable_respondable_respondable_respondable_visual_vis_1.dae" />
+            </geometry>
+            <material name="LfingerTip_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="LfingerTip_respondable_respondable_respondable_respondable_respondable_visual">
+            <origin xyz="0.015281 0.010303 -0.000006" rpy="1.570917 3.141585 2.618145" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LfingerTip_respondable_respondable_respondable_respondable_respondable_visual_vis_2.dae" />
+            </geometry>
+            <material name="LfingerTip_respondable_respondable_respondable_respondable_respondable_visual_material">
+                <color rgba="0.305882 0.305882 0.305882 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="LactiveJoint">
+        <axis xyz="0 0 1" />
+        <parent link="robotiq_base_respondable_respondable_respondable_respondable_respondable_respondable" />
+        <child link="LauxLink1Visible_visual_visual_visual_visual_visual_visual" />
+        <origin xyz="0.067942 -0.004681 0.042599" rpy="-1.570793 -1.570796 0.000000" />
+    </joint>
+    <link name="LauxLink1Visible_visual_visual_visual_visual_visual_visual">
+        <visual name="LauxLink1Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.014963 -0.001623 0.000001" rpy="-1.570931 3.141677 -1.674482" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LauxLink1Visible_visual_visual_visual_visual_visual_visual_vis_1.dae" />
+            </geometry>
+            <material name="LauxLink1Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="LauxLink1Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.014963 -0.001623 0.000001" rpy="-1.570931 3.141677 -1.674482" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LauxLink1Visible_visual_visual_visual_visual_visual_visual_vis_2.dae" />
+            </geometry>
+            <material name="LauxLink1Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+    <joint type="continuous" name="LauxJoint2">
+        <axis xyz="0 0 1" />
+        <parent link="LauxLink1Visible_visual_visual_visual_visual_visual_visual" />
+        <child link="LauxLink2Visible_visual_visual_visual_visual_visual_visual" />
+        <origin xyz="0.031465 -0.004244 -0.000000" rpy="3.141592 3.141593 -3.141592" />
+    </joint>
+    <link name="LauxLink2Visible_visual_visual_visual_visual_visual_visual">
+        <visual name="LauxLink2Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.003104 0.023609 -0.000000" rpy="-1.570795 3.141585 -0.130688" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LauxLink2Visible_visual_visual_visual_visual_visual_visual_vis_1.dae" />
+            </geometry>
+            <material name="LauxLink2Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.282317 0.282389 0.282389 1.0" />
+            </material>
+        </visual>
+        <visual name="LauxLink2Visible_visual_visual_visual_visual_visual_visual">
+            <origin xyz="0.003104 0.023609 -0.000000" rpy="-1.570795 3.141585 -0.130688" />
+            <geometry>
+                <mesh filename="models/urdf/ur5_industrial_16505/ur5_industrial_1_LauxLink2Visible_visual_visual_visual_visual_visual_visual_vis_2.dae" />
+            </geometry>
+            <material name="LauxLink2Visible_visual_visual_visual_visual_visual_visual_material">
+                <color rgba="0.837524 0.970755 1.000000 1.0" />
+            </material>
+        </visual>
+    </link>
+</robot>

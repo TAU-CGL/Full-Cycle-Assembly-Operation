@@ -1,0 +1,9 @@
+{
+  "dh": "dh_configs/coppelia_ur5_abc_lite_dh.json",
+  "path": "paths/inputs/abc_lite/euler_abc_lite_inflated_path.csv",
+  "urdf_path": "models/urdf/ur5_abc_lite/ur5_abc_lite.urdf",
+  "dynamic_sub_assembly_relative_rotation": [90, 0, 0],
+  "ref_point_offset": [0, 0, 0],
+  "theta_offsets": [-90, 90, 0, 90, 0, -90],
+  "position_factor": 0.1
+}

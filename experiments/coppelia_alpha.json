@@ -1,0 +1,9 @@
+{
+  "dh": "dh_configs/coppelia_ur5_alpha_dh.json",
+  "path": "paths/inputs/alpha/alpha_path_with_base_euler.csv",
+  "urdf_path": "models/urdf/ur5_closed_robotiq_alpha_oriented/ur5_closed_robotiq_alpha_oriented.urdf",
+  "dynamic_sub_assembly_relative_rotation": [-90, 0, 90],
+  "ref_point_offset": [0, 0, 0],
+  "theta_offsets": [-90, 90, 0, 90, 0, -90],
+  "position_factor": 0.14
+}

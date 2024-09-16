@@ -1,9 +1,9 @@
 # Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm
 
 <div>
-<img src="https://github.com/yuvallavi111/IK-path-gen/blob/main/results/16505_full_solution.gif?raw=true" height="200" alt="Results16505" style="float: left;">
-<img src="https://github.com/yuvallavi111/IK-path-gen/blob/main/results/az_full_size_x4_silent.gif?raw=true" height="200" alt="ResultsAZ" style="float: left;">
-<img src="https://github.com/yuvallavi111/IK-path-gen/blob/main/results/UR5e_solving_the_alpha_puzzle.gif?raw=true" height="200" alt="ResultsAlpha" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/16505_full_solution.gif?raw=true" height="200" alt="Results16505" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/az_full_size_x4_silent.gif?raw=true" height="200" alt="ResultsAZ" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/UR5e_solving_the_alpha_puzzle.gif?raw=true" height="200" alt="ResultsAlpha" style="float: left;">
 </div>
 
 Implementation of our paper, "Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm".

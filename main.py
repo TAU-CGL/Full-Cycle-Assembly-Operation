@@ -102,7 +102,6 @@ if __name__ == "__main__":
             test_AB,
         )
         if ik_success:
-            print("succeeded")
             trajectory_report = {
                 "time": time() - start_time,
                 "initial_pose": initial_pose,

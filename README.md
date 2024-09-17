@@ -1,36 +1,33 @@
 # Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm
 
 <div>
-<img src="https://github.com/yuvallavi111/IK-path-gen/blob/main/results/ArmManipulation.gif?raw=true" height="200" alt="ResultsArm" style="float: left;">
-<img src="https://github.com/yuvallavi111/IK-path-gen/blob/main/results/FreeFlying.gif?raw=true" height="200" alt="ResultsFree" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/16505_full_solution.gif?raw=true" height="200" alt="Results16505" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/az_full_size_x4_silent.gif?raw=true" height="200" alt="ResultsAZ" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/UR5e_solving_the_alpha_puzzle.gif?raw=true" height="200" alt="ResultsAlpha" style="float: left;">
 </div>
-
-
-https://github.com/user-attachments/assets/0d7c9016-ef6a-4ceb-967a-521ef6150fee
-
 
 Implementation of our paper, "Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm".
 
 ## Abstract
 
-We present an end-to-end framework for planning tight assembly operations, where the input is digital models, 
-and the output is a full execution plan for a physical robotic arm, 
-including the trajectory placement and the grasping. 
-The framework builds on our earlier results on tight assembly planning 
+We present an end-to-end framework for planning tight assembly operations, where the input is digital models,
+and the output is a full execution plan for a physical robotic arm,
+including the trajectory placement and the grasping.
+The framework builds on our earlier results on tight assembly planning
 for free-flying objects and includes the following novel components:
- (i) post processing of the free-flying paths to relax the tightness (where possible) and smooth the path, 
- (ii) employing analytic path-wise inverse kinematic (IK) solutions with IK-branch switching where needed, 
- (iii)  trajectory placement search based on the above path-wise IK, to determine feasible arm paths,  and 
- (iv) coping with the grasping challenge. 
-The framework provides guarantees as to the quality of the outcome trajectory. 
-For each component we provide the algorithmic details and 
-a full open-source software package for reproducing the process. 
-Lastly, we demonstrate the framework with tight and challenging assembly problems 
-(as well as puzzles, which are planned to be hard to assemble), 
-using a UR5e robotic arm in the real world and in simulation. 
-See figure at the top for a physical UR5e assembling the alpha-z puzzle 
-(known to be considerably more complicated to assemble than the celebrated alpha puzzle). 
-Full video clips of all the assembly demonstrations together with our open source software are available at: 
+(i) post processing of the free-flying paths to relax the tightness (where possible) and smooth the path,
+(ii) employing analytic path-wise inverse kinematic (IK) solutions with IK-branch switching where needed,
+(iii) trajectory placement search based on the above path-wise IK, to determine feasible arm paths, and
+(iv) coping with the grasping challenge.
+The framework provides guarantees as to the quality of the outcome trajectory.
+For each component we provide the algorithmic details and
+a full open-source software package for reproducing the process.
+Lastly, we demonstrate the framework with tight and challenging assembly problems
+(as well as puzzles, which are planned to be hard to assemble),
+using a UR5e robotic arm in the real world and in simulation.
+See figure at the top for a physical UR5e assembling the alpha-z puzzle
+(known to be considerably more complicated to assemble than the celebrated alpha puzzle).
+Full video clips of all the assembly demonstrations together with our open source software are available at:
 https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation
 
 ## Setup

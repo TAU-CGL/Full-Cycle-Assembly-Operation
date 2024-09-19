@@ -1,9 +1,9 @@
 # Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm
 
 <div>
-<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/16505_full_solution.gif?raw=true" height="200" alt="Results16505" style="float: left;">
-<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/az_full_size_x4_silent.gif?raw=true" height="200" alt="ResultsAZ" style="float: left;">
-<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/results/UR5e_solving_the_alpha_puzzle.gif?raw=true" height="200" alt="ResultsAlpha" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/video_clips/16505_full_solution.gif?raw=true" height="200" alt="Results16505" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/video_clips/az_full_size_x4_silent.gif?raw=true" height="200" alt="ResultsAZ" style="float: left;">
+<img src="https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation/blob/main/video_clips/UR5e_solving_the_alpha_puzzle.gif?raw=true" height="200" alt="ResultsAlpha" style="float: left;">
 </div>
 
 Implementation of our paper, "Full-Cycle Assembly Operation: From Digital Planning to Trajectory Execution by a Robot Arm".
@@ -29,6 +29,10 @@ See figure at the top for a physical UR5e assembling the alpha-z puzzle
 (known to be considerably more complicated to assemble than the celebrated alpha puzzle).
 Full video clips of all the assembly demonstrations together with our open source software are available at:
 https://github.com/TAU-CGL/Full-Cycle-Assembly-Operation
+
+## Results
+
+Results and demonstrations are available under the `video_clips` directory.
 
 ## Setup
 

@@ -119,7 +119,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Real-world and simulated demonstrations of our framework executing complex assembly trajectories using a robotic arm. The video showcases precise and reliable execution of both industry-related and puzzle-like assemblies, demonstrating the framework’s effectiveness in handling diverse and challenging assembly tasks in physical and virtual environments.
+        Real-world and simulated demonstrations of our framework executing complex assembly trajectories using a robotic arm. The video showcases precise and reliable execution of both industry-related and puzzle-like assemblies, demonstrating the framework's effectiveness in handling diverse and challenging assembly tasks in physical and virtual environments.
       </h2>
     </div>
   </div>
@@ -161,6 +161,81 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Framework Overview -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Framework Overview</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present a framework that converts assembly parts design into a detailed joint-based robotic arm trajectory.
+          </p>
+          <center>
+            <img src="static/images/framework_overview.png" alt="Framework Overview" style="max-width: 100%; height: auto;"/>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CPW-IK Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Continuous Path-Wise IK</h2>
+        <div class="content has-text-justified">
+          <p>
+            Continuous Path-Wise IK (CPW-IK) is a fast dynamic programming based algorithm, which guarantees to provide only feasible trajectories, with bounded error. We build a layered Directed Acyclic Graph G in joint space, where each layer 𝐿𝑖 represents time stamp 𝑖 in the trajectory, and each row refers to a specific branch of the robotic arm. We then add start and end dummy nodes s and t to the graph. Node 𝑎 ∈ 𝐿𝑘 is connected to node 𝑏 ∈ 𝐿𝑘+1 if and only if their 𝐿1 distance in C-space is smaller than some predefined threshold. Next, we perform a search for a directed path in G from s to t with the minimum maximally-weighted edge.
+          </p>
+          <center>
+            <img src="static/images/cpw_ik.png" alt="CPW-IK Visualization" style="max-width: 100%; height: auto;"/>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Placement Search Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Assembly Placement Search</h2>
+        <div class="content has-text-justified">
+          <p>
+            Randomly search for a valid placement of the static part of the assembly, using the fast CPW-IK to test for a valid trajectory of the arm moving the dynamic part. Successful locations are represented below by arrow locations, while the orientation is represented by the arrows direction and color.
+          </p>
+          <center>
+            <img src="static/images/placement_search.png" alt="Placement Search Results" style="max-width: 100%; height: auto;"/>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Results Section -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Six classic challenging assemblies were solved by the framework, using physical robotic arms and in simulation.
+          </p>
+          <center>
+            <img src="static/images/results.png" alt="Assembly Results" style="max-width: 100%; height: auto;"/>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -252,7 +327,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
